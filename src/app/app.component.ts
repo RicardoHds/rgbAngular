@@ -19,11 +19,10 @@ export class AppComponent {
     this.color3 = this.ruletaColores();
  
     this.RGB = ('rgba('+this.color1 +','+this.color2 +','+this.color3 +')');
-    return 'rgba('+this.color1 +','+this.color2 +','+this.color3 +')';
+    return 'rgba('+this.color1 +','+ this.color2 +','+this.color3 +')';
 
   }
-  ruletaColores(){
-    //Math.floor(Math.random()*255);
-    return Math.floor(Math.random()*255);;
+  ruletaColores() {
+    return Math.floor(Math.random() * 255);
   }
 }
